@@ -5,6 +5,7 @@
 *.pdf
 *.bak
 *.asc
+*.adoc
 *.ORIG
 /1.1/
 /1.0/
@@ -20,6 +21,7 @@ BIG_DATA/pubmed.zip
 pubmed.zip
 pubmed19n0001.xml
 /images/
+requirements.txt
 
 ##################################################################################################
 # Vim ignores

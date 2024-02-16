@@ -1,64 +1,56 @@
 book-details:
     class-name: Extreme Python
-    revision: 1.0  # current course revision
-    extra: true # T if non-core modules needed
+    class-slug: pyextreme
+    revision: 1.2  # current course revision
     licensed: true # T if need to put license info in footer
-    non-python: true # T if non-python utilities needed
-
+    
     author-name: John Strickler
     author-email: jstrickler@gmail.com
     toc: true
     doc-type: book
     source-highlighter: pygments
     include-file: allcourses_common.asc
-
-    prefaces:
-        - py3usgs_atc.asc
+    slides-theme: beige
+    include-atc: true
 
     chapter-days:
         - 
             day-label: Day 1
             chapters: 
+                - vs_code_setup.asc
                 - virtual_environments.asc
                 - pythonic_programming.asc
                 - developer_tools.asc
-                - logging.asc
 
         - 
             day-label: Day 2
             chapters:
+                - logging.asc
+                - type-hinting.asc
                 - unit_testing_pytest.asc
-                - design_patterns.asc
                 - packaging.asc
-                - functional_tools.asc
 
         - 
             day-label: Day 3
             chapters:
+                - functional_tools.asc
                 - container_classes.asc
-                - generators_and_other_iterables.asc
+                - iterables_and_generators.asc
                 - metaprogramming.asc
-                - advanced_xml.asc
 
         - 
             day-label: Day 4
             chapters:
-
+                - advanced_xml.asc
                 - multiprogramming.asc
-                - network_programming.asc
                 - consuming_rest_data.asc
-                - ipython_and_jupyter.asc  # make sure notebooks and their data files are present
-
-            day-label: Day 5
-            chapters:
-                - intro_to_numpy.asc
-                - intro_to_scipy.asc
-                - intro_to_pandas.asc
-                - intro_to_matplotlib.asc
+                - ipython_and_jupyterlab.asc
 
     appendices:
             - bibliography.asc
+            - network_programming.asc
             - git_access.asc
+            - design_patterns.asc
 
     lab-files:  # student files for this course that are not specified by chapter files
         root:
@@ -70,21 +62,11 @@ book-details:
             - where_do_i_go.html
         data_binary:
         setup:
+            - 
             - all_pycharm_settings.zip
             - gitignore
             - cookiecutter-python-module
         notebooks:
 
-    non-python-flags: # flags for non-Python utilities
-        pycharm: true # T if PyCharm should be in setup
-        graphviz: true # T if GraphViz needed
-        postman: true # T if PostMan needed
-        kafka: false # T if kafka needed
-        xcode: false # T if xcode needed
-        docker: false # T if docker needed
-        mingw: false # T if mingw needed
-        git: true # T if git needed
-        chromedriver  : false # T if chromedriver   needed
-        ccompnote: false # T if C Compiler note needed
-
-    vars:
+    ides:
+        - vscode
